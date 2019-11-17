@@ -13,6 +13,11 @@
 		3017DB632371B17A0061E170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3017DB612371B17A0061E170 /* Main.storyboard */; };
 		3017DB6F2371B17B0061E170 /* EnglishAideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017DB6E2371B17B0061E170 /* EnglishAideTests.swift */; };
 		3017DB7A2371B17B0061E170 /* EnglishAideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017DB792371B17B0061E170 /* EnglishAideUITests.swift */; };
+		3017DB882371B3B50061E170 /* allwords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3017DB872371B3B50061E170 /* allwords.txt */; };
+		3017DB8F2371C12C0061E170 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017DB8E2371C12C0061E170 /* DatabaseManager.swift */; };
+		3024DE742376F98000DC693A /* DictionaryWordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3024DE732376F98000DC693A /* DictionaryWordModel.swift */; };
+		3024DE762376FF6600DC693A /* Dictionary.db in Resources */ = {isa = PBXBuildFile; fileRef = 3024DE752376FF6600DC693A /* Dictionary.db */; };
+		3024DE782381980200DC693A /* DictionaryTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3024DE772381980200DC693A /* DictionaryTableCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		3017DB752371B17B0061E170 /* EnglishAideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnglishAideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3017DB792371B17B0061E170 /* EnglishAideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishAideUITests.swift; sourceTree = "<group>"; };
 		3017DB7B2371B17B0061E170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3017DB872371B3B50061E170 /* allwords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = allwords.txt; sourceTree = "<group>"; };
+		3017DB8E2371C12C0061E170 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		3024DE732376F98000DC693A /* DictionaryWordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryWordModel.swift; sourceTree = "<group>"; };
+		3024DE752376FF6600DC693A /* Dictionary.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dictionary.db; sourceTree = "<group>"; };
+		3024DE772381980200DC693A /* DictionaryTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +106,16 @@
 		3017DB5A2371B1790061E170 /* EnglishAide */ = {
 			isa = PBXGroup;
 			children = (
+				3017DB8D2371C10B0061E170 /* Database */,
 				3017DB5B2371B1790061E170 /* AppDelegate.swift */,
 				3017DB5D2371B1790061E170 /* ViewController.swift */,
+				3024DE772381980200DC693A /* DictionaryTableCellView.swift */,
 				3017DB5F2371B17A0061E170 /* Assets.xcassets */,
 				3017DB612371B17A0061E170 /* Main.storyboard */,
 				3017DB642371B17A0061E170 /* Info.plist */,
 				3017DB652371B17A0061E170 /* EnglishAide.entitlements */,
+				3017DB872371B3B50061E170 /* allwords.txt */,
+				3024DE752376FF6600DC693A /* Dictionary.db */,
 			);
 			path = EnglishAide;
 			sourceTree = "<group>";
@@ -122,6 +136,15 @@
 				3017DB7B2371B17B0061E170 /* Info.plist */,
 			);
 			path = EnglishAideUITests;
+			sourceTree = "<group>";
+		};
+		3017DB8D2371C10B0061E170 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3017DB8E2371C12C0061E170 /* DatabaseManager.swift */,
+				3024DE732376F98000DC693A /* DictionaryWordModel.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +253,8 @@
 			files = (
 				3017DB602371B17A0061E170 /* Assets.xcassets in Resources */,
 				3017DB632371B17A0061E170 /* Main.storyboard in Resources */,
+				3017DB882371B3B50061E170 /* allwords.txt in Resources */,
+				3024DE762376FF6600DC693A /* Dictionary.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3017DB5E2371B1790061E170 /* ViewController.swift in Sources */,
+				3024DE782381980200DC693A /* DictionaryTableCellView.swift in Sources */,
 				3017DB5C2371B1790061E170 /* AppDelegate.swift in Sources */,
+				3017DB8F2371C12C0061E170 /* DatabaseManager.swift in Sources */,
+				3024DE742376F98000DC693A /* DictionaryWordModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
